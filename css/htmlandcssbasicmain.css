@@ -1,0 +1,87 @@
+.heading{
+    text-align:center;
+    text-decoration:underline;
+    font-size:4rem;
+}
+#expand{
+    border-radius:0.5rem;
+    font-size:1.5rem;
+    background-color:white;
+    border-style:solid;
+    padding:.5rem;
+    margin-left:2rem;
+    margin-bottom:3rem;
+    cursor:pointer;
+    border-color:#c9c9c9;
+}
+#expand:hover{
+   border-color:#004af9;
+}
+li{
+   font-size:1.6rem;
+   border:solid;
+   list-style-position:inside;
+   border-bottom-color:#c9c9c9;
+   border-top-color:white;
+   border-left-color:white;
+   border-right-color:white;
+   line-height:4rem;
+   margin-right:3rem;
+   list-style-image: url("point2.png");
+   cursor:pointer;
+}
+li:hover{
+   border:solid;
+   border-radius:0.5rem;
+   border-color:#004af9;
+}
+a{
+   color: #46a3ff;
+   text-decoration:none;
+}
+.module_1_list{
+   display:none;
+}
+.module_1_list:hover{
+   border-color:green;
+}
+.module_2_list{
+   display:none;
+}
+.module_2_list:hover{
+   border-color:green;
+}
+.module_3_list{
+   display:none;
+}
+.module_3_list:hover{
+   border-color:green;
+}
+.module_4_list{
+   display:none;
+}
+.module_4_list:hover{
+   border-color:green;
+}
+.module_5_list{
+   display:none;
+}
+.module_5_list:hover{
+   border-color:green;
+}
+.module_6_list{
+   display:none;
+}
+.module_6_list:hover{
+   border-color:green;
+}
+button{
+   border:none;
+   background-color:white;
+   font-size:2rem;
+   cursor:pointer;
+}
+button:focus{
+   border:none;
+   outline:none;
+}
