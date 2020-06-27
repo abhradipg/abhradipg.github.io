@@ -18,8 +18,6 @@ li{
   border-width:2px;;
   border-bottom-color: #00db25;
   cursor:pointer;
-  margin-left:20px;
-  margin-right:65px;
   margin-bottom:15px;
   list-style-position:inside;
   padding-top:10px;
@@ -36,4 +34,8 @@ li:hover{
   border-radius:5px;
   border-color: #00db25;
   background-color:#8af59c;
+}
+main{
+padding-right:65px;
+padding-left:20px;
 }

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>html-css1.1</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css\modules.css">
+  </head>
+  <body>
+    <header>
+       <p>HTML and CSS Basics</p>
+       <p>Introduction to Module 1</p>
+       <img href="menu_icon.png">
+    </header>
+    <footer>
+    </footer>
+  </body>
+</html>

@@ -1,17 +1,17 @@
 header{
       margin-top:20px;
-     margin-bottom:20px;
+      margin-bottom:20px;
 }
 #header{
     text-align:center;
-    font-size:3rem;
+    font-size:48px;
 }
 hr{
 border-color:#5900ff;
 }
 #expand{
-    border-radius:0.5rem;
-    font-size:1.5rem;
+    border-radius:10px;
+    font-size:24px;
     background-color:white;
     border-style:solid;
     padding:.5rem;
@@ -32,13 +32,14 @@ li{
    border-left-color:white;
    border-right-color:white;
    line-height:4rem;
-   margin-right:3rem;
+   margin-right:48px;
+   padding-right:48px;
    list-style-image: url("point2.png");
    cursor:pointer;
 }
 li:hover{
    border:solid;
-   border-radius:0.5rem;
+   border-radius:10px;
    border-color:#004af9;
 }
 a{
@@ -47,36 +48,48 @@ a{
 }
 .module_1_list{
    display:none;
+   margin-right:0px;
+   padding-left:10px;
 }
 .module_1_list:hover{
    border-color:green;
 }
 .module_2_list{
    display:none;
+   margin-right:0px;
+   padding-left:10px;
 }
 .module_2_list:hover{
    border-color:green;
 }
 .module_3_list{
    display:none;
+   margin-right:0px;
+   padding-left:10px;
 }
 .module_3_list:hover{
    border-color:green;
 }
 .module_4_list{
    display:none;
+   margin-right:0px;
+   padding-left:10px;
 }
 .module_4_list:hover{
    border-color:green;
 }
 .module_5_list{
    display:none;
+   margin-right:0px;
+   padding-left:10px;
 }
 .module_5_list:hover{
    border-color:green;
 }
 .module_6_list{
    display:none;
+   margin-right:0px;
+   padding-left:10px;
 }
 .module_6_list:hover{
    border-color:green;
