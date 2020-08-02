@@ -1,0 +1,18 @@
+#option1_1{
+   margin-bottom:0.5rem;
+   border:solid;
+   border-color:#ccc;
+   border-radius:0.5rem;
+   font-size:1.5rem;
+   line-height:3rem;
+}
+#option1_1:focus{
+   border-color:blue;
+   border-radius:0.5rem;
+   outline:none;
+}
+#option1_ans{
+  font-size:1.5rem;
+  margin-left:1rem;
+  display:none;
+}

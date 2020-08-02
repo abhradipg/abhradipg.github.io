@@ -1,0 +1,7 @@
+table p,table pre{
+  padding:1.5rem;
+}
+table, td {
+  border: 1px solid red;
+  border-collapse: collapse;
+}

@@ -1,0 +1,50 @@
+.blue{
+  color:blue;
+}
+.purple{
+  color:purple;
+}
+.orange{
+  color:orange;
+}
+.green{
+  color:green;
+}
+p{
+  font-size:1.25rem;
+  margin:0rem;
+}
+pre{
+  font-size:1.25rem;
+  margin:0rem;
+  font-family:serif;
+}
+hr{
+  border-color:red;
+  border-width:0.125rem;
+  width:95%;
+}
+button{
+  font-size:1.25rem;
+  border-style:solid;
+  border-color:red;
+  border-width:0.125rem;
+  background-color:white;
+  align-text:center;
+  height:2rem;
+  width:4rem;
+  margin:0.5rem; 
+  margin-top:1rem; 
+  border-radius:0.5rem;
+  outline:none;
+  cursor:pointer;
+}
+header{
+  position: -webkit-sticky; 
+  position: sticky;
+  top:0;
+  background-color:white
+}
+body{
+  margin-top:0px;
+}

@@ -1,0 +1,13 @@
+table p,table pre{
+  padding:1.5rem;
+  margin:0px;
+}
+table, td , th{
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+th{
+  background-color:blue;
+  font-size:1.5rem;
+  line-height:2rem;
+}

@@ -4,21 +4,41 @@
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
 <html lang="en">
   <head>
-    <title>htmlandcssbasicmain</title>
+    <title>html-css1.4.1</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="..\css\htmlandcssbasicmain.css">
-    <script src="..\js\htmlandcssbasicmain.js"></script>
+    <link rel="stylesheet" href="..\css\modules.css" >  
+    <script src="..\js\modules.js"></script>
   </head>
-  <body>
-   <header>
-     <p id="header">HTML and CSS Basics</p>
-     <hr>
-   </header>
-    <button type="button" id="expand" onclick="displayAll()">Expand All</button>
-    <ul>
-        <li id="module_1" onclick="display1()">
-           <button >Module 1: My first Web page</button>
-           <ol>
+  <body id="body">
+    <header>
+       <div class="flex_container">
+         <div class="head1">
+           <img src="menu_icon.png" alt="menu" title="menu" id="menu">
+         </div>
+         <div class="head1_c">
+           <img src="collapse.png" alt="collapse" title="collapse" id="collapse">
+         </div>
+         <div class="head1_e">
+           <img src="expand.png" alt="expand" title="expand" id="expand">
+         </div>
+         <div class="head2">
+           <p>HTML and CSS Basics</p>
+           <p id="module">Character encoding</p>
+         </div>
+       </div>
+         <div class="progress-container" id="mainBar">
+            <div class="progress-bar" id="myBar"></div>
+         </div>
+    </header>
+    <nav id="navigation">
+       <ul>
+         <a href="..\index.html">
+            <li class="module_1_list">
+                Main Page
+            </li>
+          </a>
+          <li> Module 1: My first Web page
+             <ul>
               <a href="html-css1-1-1.html">
                  <li class="module_1_list">
                      1.1 Introduction to Module 1
@@ -54,11 +74,10 @@
                     1.7 Exercises - Module 1 (29 Questions)
                  </li>
                </a>
-           </ol>
-        </li>
-        <li id="module_2" onclick="display2()">
-           <button>Module 2: Attributes, images and links</button>
-           <ol id="module_2_list">
+             </ul>
+          </li>
+          <li>Module 2: Attributes, images and links
+             <ul>
               <a href="">
                 <li class="module_2_list">
                    2.1 Introduction to Module 2
@@ -89,11 +108,10 @@
                    2.6 Exercises - Module 2 (28 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_3" onclick="display3()">
-           <button>Module 3: Adding style with CSS</button>
-           <ol id="module_3_list">
+             </ul>
+          </li>
+          <li>Module 3: Adding style with CSS
+             <ul>
               <a href="">
                 <li class="module_3_list">
                    3.1 Introduction to Module 3
@@ -119,11 +137,10 @@
                    3.5 Exercises - Module 3 (15 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_4" onclick="display4()">
-           <button>Module 4: Fixing and debugging</button>
-           <ol id="module_4_list">
+             </ul>
+          </li>
+          <li>Module 4: Fixing and debugging
+             <ul>
               <a href="">
                 <li class="module_4_list">
                    4.1 Introduction to Module 4
@@ -149,12 +166,11 @@
                    4.5 Exercises - Module 4 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_5" onclick="display5()">
-           <button>Module 5: More HTML and CSS</button>
-           <ol id="module_5_list">
-              <a href="">
+             </ul>
+          </li>
+          <li>Module 5: More HTML and CSS
+             <ul>
+               <a href="">
                 <li class="module_5_list">
                    5.1 Introduction to Module 5
                 </li>
@@ -184,11 +200,10 @@
                    5.6 Exercises - Module 5 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_6" onclick="display6()">
-           <button>Module 6: Basics of page layout</button>
-           <ol id="module_6_list">
+             </ul>
+          </li>
+          <li>Module 6: Basics of page layout
+             <ul>
               <a href=""> 
                 <li class="module_6_list">
                    6.1 Introduction to Module 6
@@ -229,8 +244,62 @@
                    6.8 Final exam (52 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-    </ul>
+             </ul>
+          </li>
+       </ul>
+    </nav>
+    <main>
+       <p class="tittle">
+           Character encoding
+       </p>
+       <p>
+           A character can be any letter, digit or symbol that makes up words and languages. English alphabets and digits 'a-z', 'A-Z', '0-9' are all considered
+           characters. Other examples of characters include the Latin letter á or the Chinese ideograph 請 or the Devanagari character ह. A <b>character</b> set is a 
+           collection of characters (letters and symbols) in a writing system.
+       </p>
+       <p>
+           Each character is assigned a particular number called a <b>code</b> point. These code points are stored in computer memory in the form of 
+           <a href="https://en.wikipedia.org/wiki/Byte">bytes</a> (a unit of data in computer memory). In technical terms, we say the character is <b>encoded</b> 
+           using one or more bytes.
+       </p>
+       <p>
+           Basically, all the characters are stored in computer language and a <b>character encoding</b> is the awesome dictionary that is going to help us decode this 
+           computer language into something we can understand. In technical terms, it is what is used as a reference to map code points into bytes to store in 
+           computer memory; then when you use a character in your HTML, the bytes are then read back into code points using the character encoding as a reference. 
+       </p>
+       <p>
+           Examples of character encodings include:
+       </p>
+       <ul class="list">
+          <li><em>ASCII:</em> contains letters, characters and a limited set of symbols and punctuation for the English language</li>
+          <li><em>Windows-1252 (Latin1):</em> Windows character set that supports 256 different code points</li>
+          <li><em>ISO-8859-6:</em> contains letters and symbols based on the Arabic script</li>
+          <li><em>Unicode:</em> contains characters for most living languages and scripts in the world</li>
+       </ul>
+       <p>
+           When you code in HTML, you must specify the encoding you wish your page to use. Providing no encoding or the wrong one is pretty much like providing 
+           the wrong dictionary to decode. It can display your text incorrectly or cause your data to not be read correctly by a search engine. A character 
+           encoding declaration in your HTML is also important to process unfamiliar characters entered in forms by users, URLs generated by scripts, etc.
+       </p>
+       <p>
+           <strong>You should always use the Unicode character encoding UTF-8 for your Web pages</strong>, and avoid 'legacy' encodings such as ASCII, 
+           Windows-1252 and ISO-8859-6 mentioned above. Do not use the UTF-16 Unicode encoding either.
+       </p>
+       <p>
+           It is important to note that it is not enough to simply declare your encoding at the top of the web page. <b>You have to ensure that your editor saves
+           the file in UTF-8</b> also. Most editors will do that these days, but you should check.
+       </p>
+       <p>
+           Read an <a href="https://www.w3.org/International/getting-started/characters">Introduction to character sets and encodings here</a>.
+       </p>
+    </main>
+    <footer>
+         <div><a href="html-css1-3-1.html"><img src="prev.png" title="previous" alt="previous"></a></div>
+         <div><a href="html-css1-4-1.html"><img src="1.png" title="page 1" alt="page 1"></a></div> 
+         <div><a href="html-css1-4-2.html"><img src="2.png" title="page 2" alt="page 2"></a></div>
+         <div><a href="html-css1-4-3.html"><img src="3.png" title="page 3" alt="page 3"></a></div>
+         <div><a href="html-css1-4-4.html"><img src="4.png" title="page 4" alt="page 4"></a></div>
+         <div><a href="html-css1-5-1.html"><img src="next.png" title="next" alt="next"></a></div>
+    </footer>
   </body>
 </html>

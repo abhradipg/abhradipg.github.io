@@ -4,21 +4,42 @@
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
 <html lang="en">
   <head>
-    <title>htmlandcssbasicmain</title>
+    <title>html-css1.2.2</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="..\css\htmlandcssbasicmain.css">
-    <script src="..\js\htmlandcssbasicmain.js"></script>
+    <link rel="stylesheet" href="..\css\modules.css" >
+    <link rel="stylesheet" href="..\css\html-css1-2-2.css" >    
+    <script src="..\js\modules.js"></script>
   </head>
-  <body>
-   <header>
-     <p id="header">HTML and CSS Basics</p>
-     <hr>
-   </header>
-    <button type="button" id="expand" onclick="displayAll()">Expand All</button>
-    <ul>
-        <li id="module_1" onclick="display1()">
-           <button >Module 1: My first Web page</button>
-           <ol>
+  <body id="body">
+    <header>
+       <div class="flex_container">
+         <div class="head1">
+           <img src="menu_icon.png" alt="menu" title="menu" id="menu">
+         </div>
+         <div class="head1_c">
+           <img src="collapse.png" alt="collapse" title="collapse" id="collapse">
+         </div>
+         <div class="head1_e">
+           <img src="expand.png" alt="expand" title="expand" id="expand">
+         </div>
+         <div class="head2">
+           <p>HTML and CSS Basics</p>
+           <p id="module">The big three: HTML5, CSS and Javascript</p>
+         </div>
+       </div>
+         <div class="progress-container" id="mainBar">
+            <div class="progress-bar" id="myBar"></div>
+         </div>
+    </header>
+    <nav id="navigation">
+       <ul>
+         <a href="..\index.html">
+            <li class="module_1_list">
+                Main Page
+            </li>
+          </a>
+          <li> Module 1: My first Web page
+             <ul>
               <a href="html-css1-1-1.html">
                  <li class="module_1_list">
                      1.1 Introduction to Module 1
@@ -54,11 +75,10 @@
                     1.7 Exercises - Module 1 (29 Questions)
                  </li>
                </a>
-           </ol>
-        </li>
-        <li id="module_2" onclick="display2()">
-           <button>Module 2: Attributes, images and links</button>
-           <ol id="module_2_list">
+             </ul>
+          </li>
+          <li>Module 2: Attributes, images and links
+             <ul>
               <a href="">
                 <li class="module_2_list">
                    2.1 Introduction to Module 2
@@ -89,11 +109,10 @@
                    2.6 Exercises - Module 2 (28 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_3" onclick="display3()">
-           <button>Module 3: Adding style with CSS</button>
-           <ol id="module_3_list">
+             </ul>
+          </li>
+          <li>Module 3: Adding style with CSS
+             <ul>
               <a href="">
                 <li class="module_3_list">
                    3.1 Introduction to Module 3
@@ -119,11 +138,10 @@
                    3.5 Exercises - Module 3 (15 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_4" onclick="display4()">
-           <button>Module 4: Fixing and debugging</button>
-           <ol id="module_4_list">
+             </ul>
+          </li>
+          <li>Module 4: Fixing and debugging
+             <ul>
               <a href="">
                 <li class="module_4_list">
                    4.1 Introduction to Module 4
@@ -149,12 +167,11 @@
                    4.5 Exercises - Module 4 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_5" onclick="display5()">
-           <button>Module 5: More HTML and CSS</button>
-           <ol id="module_5_list">
-              <a href="">
+             </ul>
+          </li>
+          <li>Module 5: More HTML and CSS
+             <ul>
+               <a href="">
                 <li class="module_5_list">
                    5.1 Introduction to Module 5
                 </li>
@@ -184,11 +201,10 @@
                    5.6 Exercises - Module 5 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_6" onclick="display6()">
-           <button>Module 6: Basics of page layout</button>
-           <ol id="module_6_list">
+             </ul>
+          </li>
+          <li>Module 6: Basics of page layout
+             <ul>
               <a href=""> 
                 <li class="module_6_list">
                    6.1 Introduction to Module 6
@@ -229,8 +245,56 @@
                    6.8 Final exam (52 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-    </ul>
+             </ul>
+          </li>
+       </ul>
+    </nav>
+    <main>
+       <p class="tittle">
+          HTML5, CSS and JavaScript
+       </p>
+       <p class="topic">
+          What is HTML5?
+       </p>
+       <p>
+          When people say 'HTML5', they usually mean a bit more than just the 5th version of the "HyperText Markup Language". 
+          Modern Web pages and Web applications are generally composed of at least three components, so what people often mean 
+          when they say 'HTML5' is the trio of languages: HTML5, CSS3 and JavaScript.
+       </p>
+       <p>
+         The 'HTML' part contains all the content, organized into a logical structure.  This is the part that an author might 
+         be most concerned with: the words, chapter headings, figures, diagrams, etc. 
+       </p>
+       <p>
+         While there have been numerous versions of HTML since its inception, our focus in this course is the most recent version, 
+         HTML5. HTML5 was developed to provide more powerful and flexible ways for developers to create dynamic Web pages.
+       </p>
+       <p class= "topic">
+         CSS
+       </p>
+       <p>
+         The 'CSS' part (version 3 being current) is all about the presentation or style of the page; what it looks like without too 
+         much regard for the specific content. We'll be going into more detail on that later in this course, but for now, think of it 
+         as the way you might specify a "theme" in a word processing document, setting fonts, sizes, indentations and whatever else may
+          apply to what it looks like.
+       </p>
+       <p class="topic">
+         JavaScript
+       </p>
+       <p>
+         The 'JavaScript', or 'JS' for short, part is about the actions a page can take such as interaction with the user, and customizing 
+         and changing the page according to any number of parameters.  This is what allows a Web page to be more than just a document, but 
+         potentially a Web application, with nearly unlimited possibilities.  We will not be doing much with JavaScript in this course, but 
+         you should know that it is an important leg of the stool for modern Web pages.
+       </p>
+    </main>
+    <footer>
+         <div><a href="html-css1-1-1.html"><img src="prev.png" title="previous" alt="previous"></a></div>
+         <div><a href="html-css1-2-1.html"><img src="1.png" title="page 1" alt="page 1"></a></div> 
+         <div><a href="html-css1-2-2.html"><img src="2.png" title="page 2" alt="page 2"></a></div>
+         <div><a href="html-css1-2-3.html"><img src="3.png" title="page 3" alt="page 3"></a></div>
+         <div><a href="html-css1-2-4.html"><img src="4.png" title="page 4" alt="page 4"></a></div>
+         <div><a href="html-css1-3-1.html"><img src="next.png" title="next" alt="next"></a></div>
+    </footer>
   </body>
 </html>

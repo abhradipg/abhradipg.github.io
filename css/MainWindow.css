@@ -1,6 +1,8 @@
+
+
 header {
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top:1.25rem;
+  margin-bottom:1.25rem;
   
         }
 #header{
@@ -15,14 +17,14 @@ a{
 li{
   border:solid;
   border-color:white;
-  border-width:2px;;
+  border-width:0.125rem;
   border-bottom-color: #00db25;
   cursor:pointer;
-  margin-bottom:15px;
+  margin-bottom:1rem;
   list-style-position:inside;
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-left:10px;
+  padding-top:0.625rem;
+  padding-bottom:0.625rem;
+  padding-left:0.625rem;
   list-style-size:2rem;
   transition-duration:0.3s;
 }
@@ -31,11 +33,11 @@ margin:bottom:0px;
 border-color:#5900ff;
 }
 li:hover{
-  border-radius:5px;
+  border-radius:0.625rem;
   border-color: #00db25;
   background-color:#8af59c;
 }
 main{
-padding-right:65px;
-padding-left:20px;
+padding-right:4rem;
+padding-left:1.25rem;
 }

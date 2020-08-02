@@ -4,21 +4,42 @@
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
 <html lang="en">
   <head>
-    <title>htmlandcssbasicmain</title>
+    <title>html-css1.4.2</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="..\css\htmlandcssbasicmain.css">
-    <script src="..\js\htmlandcssbasicmain.js"></script>
+    <link rel="stylesheet" href="..\css\modules.css" >  
+    <script src="..\js\modules.js"></script>
+    <script src="..\js\html-css1-4-2.js"></script>
   </head>
-  <body>
-   <header>
-     <p id="header">HTML and CSS Basics</p>
-     <hr>
-   </header>
-    <button type="button" id="expand" onclick="displayAll()">Expand All</button>
-    <ul>
-        <li id="module_1" onclick="display1()">
-           <button >Module 1: My first Web page</button>
-           <ol>
+  <body id="body">
+    <header>
+       <div class="flex_container">
+         <div class="head1">
+           <img src="menu_icon.png" alt="menu" title="menu" id="menu">
+         </div>
+         <div class="head1_c">
+           <img src="collapse.png" alt="collapse" title="collapse" id="collapse">
+         </div>
+         <div class="head1_e">
+           <img src="expand.png" alt="expand" title="expand" id="expand">
+         </div>
+         <div class="head2">
+           <p>HTML and CSS Basics</p>
+           <p id="module">Character encoding</p>
+         </div>
+       </div>
+         <div class="progress-container" id="mainBar">
+            <div class="progress-bar" id="myBar"></div>
+         </div>
+    </header>
+    <nav id="navigation">
+       <ul>
+         <a href="..\index.html">
+            <li class="module_1_list">
+                Main Page
+            </li>
+          </a>
+          <li> Module 1: My first Web page
+             <ul>
               <a href="html-css1-1-1.html">
                  <li class="module_1_list">
                      1.1 Introduction to Module 1
@@ -54,11 +75,10 @@
                     1.7 Exercises - Module 1 (29 Questions)
                  </li>
                </a>
-           </ol>
-        </li>
-        <li id="module_2" onclick="display2()">
-           <button>Module 2: Attributes, images and links</button>
-           <ol id="module_2_list">
+             </ul>
+          </li>
+          <li>Module 2: Attributes, images and links
+             <ul>
               <a href="">
                 <li class="module_2_list">
                    2.1 Introduction to Module 2
@@ -89,11 +109,10 @@
                    2.6 Exercises - Module 2 (28 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_3" onclick="display3()">
-           <button>Module 3: Adding style with CSS</button>
-           <ol id="module_3_list">
+             </ul>
+          </li>
+          <li>Module 3: Adding style with CSS
+             <ul>
               <a href="">
                 <li class="module_3_list">
                    3.1 Introduction to Module 3
@@ -119,11 +138,10 @@
                    3.5 Exercises - Module 3 (15 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_4" onclick="display4()">
-           <button>Module 4: Fixing and debugging</button>
-           <ol id="module_4_list">
+             </ul>
+          </li>
+          <li>Module 4: Fixing and debugging
+             <ul>
               <a href="">
                 <li class="module_4_list">
                    4.1 Introduction to Module 4
@@ -149,12 +167,11 @@
                    4.5 Exercises - Module 4 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_5" onclick="display5()">
-           <button>Module 5: More HTML and CSS</button>
-           <ol id="module_5_list">
-              <a href="">
+             </ul>
+          </li>
+          <li>Module 5: More HTML and CSS
+             <ul>
+               <a href="">
                 <li class="module_5_list">
                    5.1 Introduction to Module 5
                 </li>
@@ -184,11 +201,10 @@
                    5.6 Exercises - Module 5 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_6" onclick="display6()">
-           <button>Module 6: Basics of page layout</button>
-           <ol id="module_6_list">
+             </ul>
+          </li>
+          <li>Module 6: Basics of page layout
+             <ul>
               <a href=""> 
                 <li class="module_6_list">
                    6.1 Introduction to Module 6
@@ -229,8 +245,85 @@
                    6.8 Final exam (52 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-    </ul>
+             </ul>
+          </li>
+       </ul>
+    </nav>
+    <main>
+       <p class="tittle">
+           Declaring the encoding of the page: the <i>&ltmeta&gt</i> tag
+       </p>
+       <p>
+           Use the <i>&ltmeta&gt</i> element with the <i>charset</i> attribute in your HTML page to indicate to the browser the character encoding you will be 
+           using in the page.
+       </p>
+       <div class="egcode">
+         <ol>
+           <li>&ltmeta <span style="color:purple">charset=</span><span style="color:green">"utf-8"</span>&gt</li>
+         </ol>
+       </div>
+       <p>
+           Alternatively, you can also use <i>http-equiv</i> and <i>content</i> attributes. 
+       </p>
+       <div class="egcode">
+         <ol>
+           <li>&ltmeta <span style="color:purple">http-equiv=</span><span style="color:green">"Content-Type"</span> <span style="color:purple">content=</span><span style="color:green">"text/html</span>; <span style="color:purple">charset=</span><span style="color:green">utf-8"</span>&gt</li>
+         </ol>
+       </div>
+       <p>
+           We recommend using the first one because it is much less complicated. You should also always use 'utf-8'.
+       </p>
+       <br>
+       <p>
+           Where to place it?
+       </p>
+       <p>
+           The meta declaration belongs inside the &lthead&gt element, and should be specified within the first 1024 bytes of your page. So the earlier it is 
+           mentioned in your code, the better. 
+       </p>
+       <p>
+           W3C recommends placing it immediately after the opening &lthead&gt tag:
+       </p>
+       <div class="egcode">
+         <ol>
+          <li><span style="color:purple">&lt!DOCTYPE html&gt</span></li> 
+          <li><pre style="display:inline">  </pre>&lthtml <span style="color:purple">lang=</span><span style="color:green">"en"</span>&gt</li>
+          <li><pre style="display:inline">    </pre>&lthead&gt</li> 
+          <li><pre style="display:inline">      </pre>&ltmeta <span style="color:purple">charset=</span><span style="color:green">"utf-8"</span>&gt</li> 
+          <li><pre style="display:inline">      . . .</pre></li> 
+          <li><pre style="display:inline">    </pre>&lt/head&gt</li> 
+          <li><pre style="display:inline">  </pre>&lt/html&gt</li> 
+       </ol>
+       </div>
+       <hr>
+       <fieldset id="q1">
+          <legend>Question: 1</legend>
+             <p>
+                What does character encoding do? Check all that apply (2 correct answers!).
+             </p>
+             <div class="q1option1">
+             <input type="checkbox" name="question1" id="option1_1"><label for="option1_1">helps translate page from one language to another</label><br>
+             </div>
+             <div class="q1option2">
+             <input type="checkbox" name="question1" id="option1_2"><label for="option1_2">acts like a dictionary that helps translate code points into bytes that can be stored in memory.</label><br>
+             </div>
+             <div class="q1option3">
+             <input type="checkbox" name="question1" id="option1_3"><label for="option1_3">decodes bytes into code points</label><br>
+             </div>
+             <div class="q1option4">
+             <input type="checkbox" name="question1" id="option1_4" ><label for="option1_4">provides support for search engines to process your HTML documents correctly</label><br>
+             </div>
+             <button class="submit" onclick="submit1()">Submit</button>
+             <button class="show" onclick="show1()">Show Answer</button>
+       </fieldset>
+    </main>
+    <footer>
+         <div><a href="html-css1-3-1.html"><img src="prev.png" title="previous" alt="previous"></a></div>
+         <div><a href="html-css1-4-1.html"><img src="1.png" title="page 1" alt="page 1"></a></div> 
+         <div><a href="html-css1-4-2.html"><img src="2.png" title="page 2" alt="page 2"></a></div>
+         <div><a href="html-css1-4-3.html"><img src="3.png" title="page 3" alt="page 3"></a></div>
+         <div><a href="html-css1-4-4.html"><img src="4.png" title="page 4" alt="page 4"></a></div>
+         <div><a href="html-css1-5-1.html"><img src="next.png" title="next" alt="next"></a></div>
+    </footer>
   </body>
 </html>

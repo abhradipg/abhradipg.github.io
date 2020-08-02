@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+<html lang="en">
+  <head>
+    <title>html-css1.4.3</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="..\css\modules.css" > 
+    <link rel="stylesheet" href="..\css\html-css1-4-3.css" > 
+    <script src="..\js\modules.js"></script>
+    <script src="..\js\html-css1-4-3.js"></script>
+  </head>
+  <body id="body">
+    <header>
+       <div class="flex_container">
+         <div class="head1">
+           <img src="menu_icon.png" alt="menu" title="menu" id="menu">
+         </div>
+         <div class="head1_c">
+           <img src="collapse.png" alt="collapse" title="collapse" id="collapse">
+         </div>
+         <div class="head1_e">
+           <img src="expand.png" alt="expand" title="expand" id="expand">
+         </div>
+         <div class="head2">
+           <p>HTML and CSS Basics</p>
+           <p id="module">Character encoding</p>
+         </div>
+       </div>
+         <div class="progress-container" id="mainBar">
+            <div class="progress-bar" id="myBar"></div>
+         </div>
+    </header>
+    <nav id="navigation">
+       <ul>
+         <a href="..\index.html">
+            <li class="module_1_list">
+                Main Page
+            </li>
+          </a>
+          <li> Module 1: My first Web page
+             <ul>
+              <a href="html-css1-1-1.html">
+                 <li class="module_1_list">
+                     1.1 Introduction to Module 1
+                 </li>
+              </a>
+               <a href="html-css1-2-1.html">
+                  <li class="module_1_list">
+                     1.2 The big three: HTML5, CSS and JavaScript
+                  </li>
+               </a>
+               <a href="html-css1-3-1.html">
+                 <li class="module_1_list">
+                    1.3 Elements, tags and attributes
+                 </li>
+               </a>
+               <a href="html-css1-4-1.html">
+                 <li class="module_1_list">
+                    1.4 Character encoding
+                 </li>
+               </a>
+               <a href="html-css1-5-1.html">
+                 <li class="module_1_list">
+                     1.5 Best practices
+                 </li>
+               </a>
+               <a href="html-css1-6-1.html">
+                 <li class="module_1_list">
+                    1.6 More on tags
+                 </li>
+               </a>
+               <a href="html-css1-7-1.html">
+                 <li class="module_1_list">
+                    1.7 Exercises - Module 1 (29 Questions)
+                 </li>
+               </a>
+             </ul>
+          </li>
+          <li>Module 2: Attributes, images and links
+             <ul>
+              <a href="">
+                <li class="module_2_list">
+                   2.1 Introduction to Module 2
+                </li>
+              </a>
+              <a href="">
+                <li class="module_2_list">
+                   2.2 Attributes
+                </li>
+              </a>
+              <a href="">
+                <li class="module_2_list">
+                   2.3 Semantic meaning
+                </li>
+              </a>
+              <a href="">
+                <li class="module_2_list">
+                   2.4 Images
+                </li>
+              </a>
+              <a href="">
+                <li class="module_2_list">
+                   2.5 Hyperlinks
+                </li>
+              </a>
+              <a href="">
+                <li class="module_2_list">
+                   2.6 Exercises - Module 2 (28 Questions)
+                </li>
+              </a>
+             </ul>
+          </li>
+          <li>Module 3: Adding style with CSS
+             <ul>
+              <a href="">
+                <li class="module_3_list">
+                   3.1 Introduction to Module 3
+                </li>
+              </a>
+              <a href="">
+                <li class="module_3_list">
+                   3.2 CSS basic syntax
+                </li>
+              </a>
+              <a href="">
+                <li class="module_3_list">
+                   3.3 CSS properties
+                </li>
+              </a>
+              <a href="">
+                <li class="module_3_list">
+                   3.4 Lists and selectors
+                </li>
+              </a>
+              <a href="">
+                <li class="module_3_list">
+                   3.5 Exercises - Module 3 (15 Questions)
+                </li>
+              </a>
+             </ul>
+          </li>
+          <li>Module 4: Fixing and debugging
+             <ul>
+              <a href="">
+                <li class="module_4_list">
+                   4.1 Introduction to Module 4
+                </li>
+              </a>
+              <a href="">
+                <li class="module_4_list">
+                   4.2 Debugging tools and HTML5
+                </li>
+              </a>
+              <a href="">
+                <li class="module_4_list">
+                   4.3 Debugging and the CSS box model
+                </li>
+              </a>
+              <a href="">
+                <li class="module_4_list">
+                   4.4 Debugging CSS precedence
+                </li>
+              </a>
+              <a href="">
+                <li class="module_4_list">
+                   4.5 Exercises - Module 4 (25 Questions)
+                </li>
+              </a>
+             </ul>
+          </li>
+          <li>Module 5: More HTML and CSS
+             <ul>
+               <a href="">
+                <li class="module_5_list">
+                   5.1 Introduction to Module 5
+                </li>
+              </a>
+              <a href="">
+                <li class="module_5_list">
+                   5.2 Tables
+                </li>
+              </a>
+              <a href="">
+                <li class="module_5_list">
+                   5.3 Multimedia
+                </li>
+              </a>
+              <a href="">
+                <li class="module_5_list">
+                   5.4 Embedding content (OPTIONAL)
+                </li>
+              </a>
+              <a href="">
+                <li class="module_5_list">
+                   5.5 CSS tricks
+                </li>
+              </a>
+              <a href="">
+                <li class="module_5_list">
+                   5.6 Exercises - Module 5 (25 Questions)
+                </li>
+              </a>
+             </ul>
+          </li>
+          <li>Module 6: Basics of page layout
+             <ul>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.1 Introduction to Module 6
+                </li>
+              </a>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.2 Concepts
+                </li>
+              </a>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.3 CSS Flexbox
+                </li>
+              </a>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.4 More flexbox
+                </li>
+              </a>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.5 New layout technique: CSS Grid
+                </li>
+              </a>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.6 Recipe project
+                </li>
+              </a>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.7 Where to from here?
+                </li>
+              </a>
+              <a href=""> 
+                <li class="module_6_list">
+                   6.8 Final exam (52 Questions)
+                </li>
+              </a>
+             </ul>
+          </li>
+       </ul>
+    </nav>
+    <main>
+       <p class="tittle">
+           HTML character references
+       </p>
+       <p>
+           Why we need character references
+       </p>
+       <p>
+           Before we learn what HTML character references are, let's look at how the need for them came about. 
+       </p>
+       <p>
+           Try the following code in your HTML:
+       </p>
+       <p>
+           
+       </p>
+       <div class="egcode">
+         <ol>
+           <li>&ltp&gt Welcome to "HTML5 & CSS Fundamentals". The first tag we will be learning about is  the &lthtml&gt tag.&lt/p&gt</li>
+         </ol>
+       </div>
+       <table class="codedemo">
+         <tr>
+           <td>
+             <iframe src="html-css1-4-3code1.html"></iframe>
+           </td>
+           <td>
+             <iframe src="html-css1-4-3render1.html"></iframe>
+           </td>
+         </tr>
+       </table>
+       <p>
+           Did you notice the &lthtml&gt tag is missing in your output? In this case, your browser mixed it up with an actual tag, although it was meant to be a 
+           part of the sentence as text. 
+       </p>
+       <p>
+           Because of this kind of confusion, HTML reserves certain characters. If you want to use these characters in your HTML, you need to use character 
+           references to display them.
+       </p>
+       <p>
+           How to use character references
+       </p>
+       <p>
+           All HTML character references can be written using either a name or number. 
+       </p>
+       <p>
+           If you want to use a named character reference in your source code, use an ampersand symbol '&', followed by the name and a semi-colon. Names are case 
+           sensitive. For example, the following represents a no-break space:
+       </p>
+       <p>
+           <b>&nbsp&nbsp&ampnbsp;</b>
+       </p>
+       <p>
+           There are two types of numeric character reference: ones that use decimal numbers and ones that use hexadecimal numbers.  In each case, the number 
+           represents the code point number of the character in Unicode.
+       </p>
+       <p>
+           If you are using a decimal number, use an ampersand symbol '&' , followed by the symbol '#', then a decimal number and a semi-colon.
+       </p>
+       <p>
+           <b>&nbsp&nbsp&amp#160;</b>
+       </p>
+       <p>
+           If you are using a hexadecimal number, use an ampersand symbol '&' , followed by the symbols '#x', then a hexadecimal number and a semi-colon.
+       </p>
+       <p>
+           <b>&nbsp&nbsp&amp#x00A0;</b>
+       </p>
+       <hr>
+       <p>
+           Protecting characters used for HTML syntax
+       </p>
+       <p>
+           The five special characters listed in the table below should always be written as character references if you want them to appear on your page when viewed 
+           by a reader:
+       </p>
+       <table id="special_char">
+          <tr>
+             <th id="col1">
+                 Symbol
+             </th>
+             <th id="col2">
+                 Entity Name
+             </th>
+             <th id="col3">
+                 Entity Number
+             </th>
+             <th id="col4">
+                 Usage
+             </th>
+          </tr>
+          <tr>
+             <td>
+                 <p>Less than '<'</p>
+             </td>
+             <td>
+                 <p>&amplt;</p>
+             </td>
+             <td>
+                 <p>&amp#60;</p>
+             </td>
+             <td>
+                 <p>Div tag: &amplt;div></p>
+             </td>
+          </tr>
+          <tr>
+             <td>
+                 <p>Greater than '>'</p>
+             </td>
+             <td>
+                 <p>&ampgt;</p>
+             </td>
+             <td>
+                 <p>&amp#62;</p>
+             </td>
+             <td>
+                 <p>Div tag: &amplt;div&ampgt;</p>
+             </td>
+          </tr>
+          <tr>
+             <td>
+                 <p>Ampersand '&'</p>
+             </td>
+             <td>
+                 <p>&ampamp;</p>
+             </td>
+             <td>
+                 <p>&amp#38;</p>
+             </td>
+             <td>
+                 <p>Tom &ampamp; Jerry</p>
+             </td>
+          </tr>
+          <tr>
+             <td>
+                 <p>Non-breaking space - space that will not create a new line</p>
+             </td>
+             <td>
+                 <p>&ampnbsp;</p>
+             </td>
+             <td>
+                 <p>&amp#160;</p>
+             </td>
+             <td>
+                 <p>If you add multiple spaces, the browser will remove all but one. So you have to use this entity to add multiple spaces in your HTML page.</p>
+             </td>
+          </tr>
+          <tr>
+             <td>
+                 <p>Quotes "</p>
+             </td>
+             <td>
+                 <p>&ampquot;</p>
+             </td>
+             <td>
+                 <p>&amp#34;</p>
+             </td>
+             <td>
+                 <p>Link to a another section on the same page using the id of the element: &amplt;a href=&ampquot;&ampnum;timetable&ampquot;&ampgt;</p>
+                 <p>Displayed as: &lta href="#timetable"&gt</p>
+                 <p>&ampquot; is generally encouraged for code. For an actual quotation, &ltq&gt or &ltblockquote&gt is preferred. </p>
+             </td>
+          </tr>
+       </table>
+       <p>
+           We do not want these special characters to be processed by the browser as HTML code. Instead, you want it to be displayed to the user. 
+           So if you wish to display this in your browser:
+       </p>
+       <p>
+           &nbsp&nbsp<span style="font-family:sans-serif">&ltimg src="images/test.png" alt="test image"&gt</span>
+       </p>
+       <p>
+           You have to write it like this in your HTML code:
+       </p>
+       <p>
+           &nbsp&nbsp<span style="font-family:sans-serif">&amplt;img src=&ampquot;images/test.png&ampquot; alt=&ampquot;test image&ampquot;&ampgt;</span>
+       </p>
+       <table class="codedemo">
+         <tr>
+           <td>
+             <iframe src="html-css1-4-3code2.html"></iframe>
+           </td>
+           <td>
+             <iframe src="html-css1-4-3render2.html"></iframe>
+           </td>
+         </tr>
+       </table>
+       <p>
+           Some tolerant browsers will allow using the '&' character directly but <b>not</b> all. So you should use its character reference &ampamp;. 
+           <a href="https://jsfiddle.net/vh2h7usk/1/">Check out these examples</a> illustrating the importance of using the character entity &ampamp; for &.
+       </p>
+       <p>
+           While it might be tempting to not use one of these character references when you notice that the browser produces the expected result anyway,
+           it is a best practice to use character references for these five special characters using &amplt;, &ampgt;, &ampquot;, &ampamp; and &ampnbsp; at all times.  
+           This is because you can never be sure what browser or application will be used to view your code, and how that will behave.
+       </p>
+       <p>
+           The &ampquot; character reference is particularly useful for quotation marks within attribute values. Let's say you want to add a title attribute to
+           an abbreviation to provide an expansion of the abbreviation. If you try the code below in a browser and hover your mouse pointer on the text 'HTML5', 
+           it will show you the title text (it works like a tooltip). The title text in the source code includes quotes (around the number 5) like this:
+       </p>
+       <div class="egcode">
+         <ol>
+           <li>&ltabbr title="Hypertext Markup Language "5""&gtHTML5&lt/abbr&gt</li>
+         </ol>
+       </div>
+       <p>
+           The above will not display the number 5.
+       </p>
+       <p>
+           Replacing the quotes with its character entity will work:
+       </p>
+       <div class="egcode">
+         <ol>
+           <li>&ltabbr title="Hypertext Markup Language &ampquot;5&ampquot;"&gtHTML5&lt/abbr&gt</li>
+         </ol>
+       </div>
+       <p>
+           Check out this <a href="https://jsfiddle.net/jffxra04/273/">jsfiddle link</a>.
+       </p>
+       <hr>
+       <fieldset id="q1">
+          <legend>Question: 1</legend>
+             <p>
+                What is the output for the code below?<br>
+                 &amplt;h1&ampgt;This is a heading &ampamp; it is the &ampquot;biggest&ampquot; one in this page&ampgt;/h1&amplt; 
+             </p>
+             <div class="q1option1">
+             <input type="radio" name="question1" id="option1_1"><label for="option1_1">This is a heading & it is the "biggest" one in this page</label><br>
+             </div>
+             <div class="q1option2">
+             <input type="radio" name="question1" id="option1_2"><label for="option1_2">&lth1&gtThis is a heading & it is the "biggest" one in this page&gt/h1&lt</label><br>
+             </div>
+             <div class="q1option3">
+             <input type="radio" name="question1" id="option1_3"><label for="option1_3">&amplt;h1&ampgt;This is a heading &amp it is the &ampquot;biggest&ampquot; one in this page&ampgt;/h1&amplt;</label><br>
+             </div>
+             <div class="q1option4">
+             <input type="radio" name="question1" id="option1_4" ><label for="option1_4">&lth1&gtThis is a heading & it is the "biggest" one in this page&lt/h1&gt</label><br>
+             </div>
+             <p class="answer" id="answer1">
+               <b>Explanation:</b><br>
+               Your browser will replace the character entity names in your code with its symbol.<br>
+               &amplt; is replaced with <<br>
+               &ampgt; is replaced with ><br>
+               &ampamp; is replaced with &<br>
+               &ampquot; is replaced with "<br>
+               Note that the closing h1 tag's opening and closing angle brackets is reversed in the line of code provided so it will display >h1< instead of &lth1&gt.
+             </p>
+             <button class="submit" onclick="submit1()">Submit</button>
+             <button class="show" onclick="show1()">Show Answer</button>
+       </fieldset>
+    </main>
+    <footer>
+         <div><a href="html-css1-3-1.html"><img src="prev.png" title="previous" alt="previous"></a></div>
+         <div><a href="html-css1-4-1.html"><img src="1.png" title="page 1" alt="page 1"></a></div> 
+         <div><a href="html-css1-4-2.html"><img src="2.png" title="page 2" alt="page 2"></a></div>
+         <div><a href="html-css1-4-3.html"><img src="3.png" title="page 3" alt="page 3"></a></div>
+         <div><a href="html-css1-4-4.html"><img src="4.png" title="page 4" alt="page 4"></a></div>
+         <div><a href="html-css1-5-1.html"><img src="next.png" title="next" alt="next"></a></div>
+    </footer>
+  </body>
+</html>

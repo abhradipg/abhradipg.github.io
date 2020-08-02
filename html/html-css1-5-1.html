@@ -4,21 +4,41 @@
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
 <html lang="en">
   <head>
-    <title>htmlandcssbasicmain</title>
+    <title>html-css1.5.1</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="..\css\htmlandcssbasicmain.css">
-    <script src="..\js\htmlandcssbasicmain.js"></script>
+    <link rel="stylesheet" href="..\css\modules.css" >   
+    <script src="..\js\modules.js"></script>
   </head>
-  <body>
-   <header>
-     <p id="header">HTML and CSS Basics</p>
-     <hr>
-   </header>
-    <button type="button" id="expand" onclick="displayAll()">Expand All</button>
-    <ul>
-        <li id="module_1" onclick="display1()">
-           <button >Module 1: My first Web page</button>
-           <ol>
+  <body id="body">
+    <header>
+       <div class="flex_container">
+         <div class="head1">
+           <img src="menu_icon.png" alt="menu" title="menu" id="menu">
+         </div>
+         <div class="head1_c">
+           <img src="collapse.png" alt="collapse" title="collapse" id="collapse">
+         </div>
+         <div class="head1_e">
+           <img src="expand.png" alt="expand" title="expand" id="expand">
+         </div>
+         <div class="head2">
+           <p>HTML and CSS Basics</p>
+           <p id="module">Best Practices</p>
+         </div>
+       </div>
+         <div class="progress-container" id="mainBar">
+            <div class="progress-bar" id="myBar"></div>
+         </div>
+    </header>
+    <nav id="navigation">
+       <ul>
+         <a href="..\index.html">
+            <li class="module_1_list">
+                Main Page
+            </li>
+          </a>
+          <li> Module 1: My first Web page
+             <ul>
               <a href="html-css1-1-1.html">
                  <li class="module_1_list">
                      1.1 Introduction to Module 1
@@ -54,11 +74,10 @@
                     1.7 Exercises - Module 1 (29 Questions)
                  </li>
                </a>
-           </ol>
-        </li>
-        <li id="module_2" onclick="display2()">
-           <button>Module 2: Attributes, images and links</button>
-           <ol id="module_2_list">
+             </ul>
+          </li>
+          <li>Module 2: Attributes, images and links
+             <ul>
               <a href="">
                 <li class="module_2_list">
                    2.1 Introduction to Module 2
@@ -89,11 +108,10 @@
                    2.6 Exercises - Module 2 (28 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_3" onclick="display3()">
-           <button>Module 3: Adding style with CSS</button>
-           <ol id="module_3_list">
+             </ul>
+          </li>
+          <li>Module 3: Adding style with CSS
+             <ul>
               <a href="">
                 <li class="module_3_list">
                    3.1 Introduction to Module 3
@@ -119,11 +137,10 @@
                    3.5 Exercises - Module 3 (15 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_4" onclick="display4()">
-           <button>Module 4: Fixing and debugging</button>
-           <ol id="module_4_list">
+             </ul>
+          </li>
+          <li>Module 4: Fixing and debugging
+             <ul>
               <a href="">
                 <li class="module_4_list">
                    4.1 Introduction to Module 4
@@ -149,12 +166,11 @@
                    4.5 Exercises - Module 4 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_5" onclick="display5()">
-           <button>Module 5: More HTML and CSS</button>
-           <ol id="module_5_list">
-              <a href="">
+             </ul>
+          </li>
+          <li>Module 5: More HTML and CSS
+             <ul>
+               <a href="">
                 <li class="module_5_list">
                    5.1 Introduction to Module 5
                 </li>
@@ -184,11 +200,10 @@
                    5.6 Exercises - Module 5 (25 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-        <li id="module_6" onclick="display6()">
-           <button>Module 6: Basics of page layout</button>
-           <ol id="module_6_list">
+             </ul>
+          </li>
+          <li>Module 6: Basics of page layout
+             <ul>
               <a href=""> 
                 <li class="module_6_list">
                    6.1 Introduction to Module 6
@@ -229,8 +244,45 @@
                    6.8 Final exam (52 Questions)
                 </li>
               </a>
-           </ol>
-        </li>
-    </ul>
+             </ul>
+          </li>
+       </ul>
+    </nav>
+    <main>
+       <p class="tittle">
+          Learning from the mistakes others have made
+       </p>
+       <p>
+          <em>Children can be great at asking questions about things that most adults take for granted, and like to challenge assumptions.</em>
+       </p>
+       <p>
+           While it's a great sign of a curious and reasoning mind, it can be overwhelming, and you can't really learn (or teach) everything at once.
+           Some things are better to be taken on faith in the short term, until you fully understand the issue.
+       </p>
+       <p>
+          That brings up a term you'll be hearing quite a bit in this class: <b>"best practices"</b>.  It's often said that bad programs can be written in 
+          any language, and we've found that to be true (at least in every language we've seen).  Over time, developers learn that some habits are 
+          better than others, in other words that some habits, like <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">avoiding redundancy and repetition</a>,
+          tend to make a program more clear and easier to understand and maintain than other habits, like using <a href="https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF">goto statements</a>.
+          It could also be about performance, i.e. in a given language doing 
+          a task one way may be faster than another.
+       </p>
+       <p>
+          A carpenter will tell you that if you want to hammer a nail, it's best to do it in as few strikes as possible (e.g. 2 or 3).  That may not be obvious to
+          non-handy people like me, but I've been told that's the best way by people with a lot more experience than I, so I'll take it on faith (at least for now).
+       </p>
+       <p>
+          There are sometimes arguments about which are the best practices.  New techniques are discovered, new ideas are born, and sometimes, fashions change.
+          For our purposes and the duration of this course, when we use the term "best practice" you can trust that it is, even though we may not be able to 
+          explain it at that point in the course, so you'll want to make it a habit.
+       </p>
+    </main>
+    <footer>
+         <div><a href="html-css1-4-1.html"><img src="prev.png" title="previous" alt="previous"></a></div>
+         <div><a href="html-css1-5-1.html"><img src="1.png" title="page 1" alt="page 1"></a></div> 
+         <div><a href="html-css1-5-2.html"><img src="2.png" title="page 2" alt="page 2"></a></div>
+         <div><a href="html-css1-5-3.html"><img src="3.png" title="page 3" alt="page 3"></a></div>
+         <div><a href="html-css1-6-1.html"><img src="next.png" title="next" alt="next"></a></div>
+    </footer>
   </body>
 </html>
