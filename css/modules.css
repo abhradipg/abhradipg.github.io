@@ -1,6 +1,11 @@
-html{
-   font-size:16px;
+@media (orientation: portrait)
+{
+  html
+  {
+    font-size:12px;
+  }
 }
+
 body{
    margin-top:9.25rem;
    z-index:1;
@@ -9,6 +14,7 @@ header{
   position:fixed;
   left:0px;
   top:0px;
+  min-width:780px;
   width:100vw;
   z-index:3;
   background-color: #e4d3fd;
@@ -274,7 +280,7 @@ pre{
 .codedemo{
   margin:auto;
   height:20rem;
-  width:65rem;
+  width:85%;
   margin-top:2rem;
 }
 iframe{
